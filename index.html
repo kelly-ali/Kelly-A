@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	
+	<head>
+		<meta charset="UTF-8">
+		<title> Historial Events </title>
+		<link rel="stylesheet" href="./CSS/style.css">
+	</head>
+	
+   
+	<body>
+		<header>
+           <h1> My Favorite Historical Events </h1>
+		    <p> Let's explore some of the key moments that shaped our world! </p>
+        </header>
+	
+    <nav>
+        <a href="#events"> Events </a>
+        <a href="#submit"> Suggest a Historical Event </a>
+        <a href="#about"> About </a>
+    </nav>
+
+        
+        <section id="events">
+            <h2> My Top 5 Historical Events </h2>
+            <ul>
+                <li> The Fall of the Berlin Wall </li>
+                <li> Apollo 11 Moon Landing </li>
+                <li> The American Revolution </li>
+                <li> The Great Depression </li>
+                <li> The First World War </li>
+            </ul>
+			<br>
+			
+			<div class="image-row">
+			<img id="img1" src="./IMG/Apollo-11.jpg" alt="An image of Neil Armstrong on the Moon">
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<img id="img2" src="./IMG/Berlin-Wall.jpg" alt="An image of the aftermath of the Fall of the Berlin Wall">
+			</div>
+			
+        </section>
+
+        <section>
+            <h2> Timeline of Events </h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th> Event </th>
+                        <th> Date </th>
+                        <th> Description </th>
+						<th> More Details </th>
+                    </tr>
+                </thead>
+				
+                <tbody>
+                    <tr>
+                        <td> The Fall of the Berlin Wall </td>
+                        <td> 1989 </td>
+                        <td> The end of the Cold War symbolized by the opening of the Berlin Wall.</td>
+						<td><a href="https://www.bbc.com/news/world-europe-50013048" target="_blank"> Visit BBC News for more information </a> </td>
+                    </tr>
+					
+                    <tr>
+                        <td> Apollo 11 Moon Landing</td>
+                        <td>1969</td>
+                        <td>Neil Armstrong becomes the first human to walk on the Moon.</td>
+						<td><a href="https://www.nasa.gov/mission/apollo-11/" target="_blank"> Visit NASA's Website for more information </a> </td>
+                    </tr>
+					
+                    <tr>
+                        <td>The American Revolution</td>
+                        <td>1775-1783</td>
+                        <td>The 13 American colonies gained independence from Great Britain.</td>
+						<td><a href="https://www.britannica.com/event/American-Revolution" target="_blank"> Read more about the American Revolution </a> </td>
+                    </tr>
+					
+                    <tr>
+                        <td> The Great Depression </td>
+                        <td> 1929-1939 </td>
+                        <td> A severe global economic downturn. </td>
+						<td><a href="https://www.britannica.com/event/Great-Depression" target="_blank"> Learn more about the Great Depression </a> </td>
+                    </tr>
+					
+                    <tr>
+                        <td>The First World War</td>
+                        <td>1914-1918</td>
+                        <td>A global war that greatly impacted political and social changes.</td>
+						<td><a href="https://www.history.com/articles/world-war-i-history" target="_blank"> History of World War I </a> </td>
+                    </tr>
+					
+                </tbody>
+            </table>
+			<br>
+			<img id="img3" src="./IMG/The-Great-Depression.jpg" alt="An image of The Great Depression">
+			
+        </section>
+		
+		    <section id="submit">
+			<h2> Suggest a Historical Event </h2>
+			<form action="#" method="post">
+			<label for="name">Your Name:</label><br>
+			<input type="text" id="name" name="name"><br><br>
+
+			<label for="event">Event Name:</label><br>
+			<input type="text" id="event" name="event"><br><br>
+
+            <label for="year">Year:</label><br>
+            <input type="number" id="year" name="year"><br><br>
+
+            <p><strong>Time Period:</strong></p>
+			<input type="radio" id="ancient" name="period" value="Ancient">
+			<label for="ancient">Ancient</label><br>
+			<input type="radio" id="medieval" name="period" value="Medieval">
+			<label for="medieval">Medieval</label><br>
+			<input type="radio" id="modern" name="period" value="Modern">
+			<label for="modern">Modern</label><br><br>
+
+			<p><strong>Type of Event:</strong></p>
+			<input type="checkbox" id="war" name="event_type" value="War">
+			<label for="war">War</label><br>
+			<input type="checkbox" id="invention" name="event_type" value="Invention">
+			<label for="invention">Invention</label><br>
+			<input type="checkbox" id="movement" name="event_type" value="Movement">
+			<label for="movement">Movement</label><br>
+			<input type="checkbox" id="discovery" name="event_type" value="Discovery">
+			<label for="discovery">Discovery</label><br><br>
+
+			<label for="continent"><strong>Continent:</strong></label><br>
+			<select id="continent" name="continent">
+			<option value="">-- Select Continent --</option>
+			<option value="Africa">Africa</option>
+			<option value="Asia">Asia</option>
+			<option value="Europe">Europe</option>
+			<option value="North America">North America</option>
+			<option value="South America">South America</option>
+			<option value="Australia">Australia</option>
+			<option value="Antarctica">Antarctica</option>
+			</select><br><br>
+
+			<label for="desc">Short Description:</label><br>
+			<textarea id="desc" name="desc" rows="4" cols="50"></textarea><br><br>
+
+            <button type="submit"> Submit </button>
+            &nbsp;&nbsp;&nbsp;
+            <button type="reset"> Reset </button>
+
+		</form>
+		</section>
+
+        <footer>
+		
+        <section id="about">
+            <h2> About </h2>
+            <p> This website is dedicated to showcasing some of the most important events in history and encouraging others to share their own favorite moments from the past.</p>
+        </section>
+		
+		</footer>
+        
+
+</body>
+	
+</html>
